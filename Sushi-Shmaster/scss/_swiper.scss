@@ -1,0 +1,67 @@
+.swiper-container{
+    padding: 0 0 15px 0;
+    @media (min-width: 600px){
+        padding: 0 0 45px 0;;
+    }
+}
+
+.swiper-slide{
+    padding: 0 5px;
+    text-align: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next
+ {
+  top: auto;
+  bottom: 0;
+  position: static;
+  display: none;
+  color: #fff;
+  margin: -12px 0 0 0;
+  &:hover{
+    path {
+        fill: #0072BC;
+        transition: fill 0.2s;
+    }
+}
+  &::after{
+      display: none;
+  }
+  @media (min-width: 600px){
+    display: block;
+  }
+}
+
+.swiper-button-prev {
+    margin-right: 45px;
+    @media (min-width: $media2){
+        margin-right: 60px;
+    }
+  }
+
+.swiper-button-next {
+    margin-left: 45px;
+    @media (min-width: $media2){
+        margin-left: 60px;
+    }
+}
+
+.swiper-pagination-bullet{
+    background-color: #fff;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+    &:nth-last-child(1){
+        margin: 0;
+    }
+    @media (min-width: 600px){
+        width: 20px;
+        height: 20px;
+    }
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+    opacity: 1;
+}
